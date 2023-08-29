@@ -1,0 +1,30 @@
+*{
+   margin:0;
+   padding:0;
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+  
+}
+#text-center{
+    padding-top: 0rem;;
+    background-color: aqua;
+}
+#home{
+    display:flex;
+   
+}
+
+
+.product-container {
+    display:flex;
+    flex-wrap: wrap;
+/* Adjust as needed */
+  }
+  
+  /* Style for each individual product */
+  .data {
+   
+    margin-bottom: 20px;
+  }
+  

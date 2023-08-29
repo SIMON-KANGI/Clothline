@@ -1,0 +1,24 @@
+.products{
+    height:100vh;
+    background-color: brown;
+    width:12rem;
+    flex-direction: column;
+    float:left;
+    max-height: 100%;
+}
+
+nav ul li{
+    margin-top:3rem;
+    padding-right: 2rem;
+    list-style-type: none;
+    
+}
+li a{
+    font-size:1.5rem;
+    color: black;
+}
+footer{
+    display: grid;
+  place-items: center;
+margin-top:auto
+}
