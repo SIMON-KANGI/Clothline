@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CartProvider  } from 'react-use-cart'
 import './App.css'
 import Home from './Components/Home'
@@ -10,13 +10,16 @@ import Cart from './Components/Cart'
 import Shoes from './Components/Products/Shoes'
 import Coats from './Components/Products/Coats'
 import Dresses from './Components/Products/Dresses'
+import SearchBar from './Components/SearchBar'
 function App() {
 
     
    return (
     <>
     <div className='container-fluid'>
-    <CartProvider><Routes>
+    
+    <CartProvider>
+    <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/Blog" element={<Blog/>}/>
    <Route path="/Contact" element={<Contact/>}/>
@@ -25,6 +28,7 @@ function App() {
    <Route path="/Shoes" element={<Shoes/>}/>
    <Route path="/Coats" element={<Coats/>}/>
    <Route path="/Dresses" element={<Dresses/>}/>
+   
    </Routes>
    </CartProvider>
     

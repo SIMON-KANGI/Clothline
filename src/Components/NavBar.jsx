@@ -4,6 +4,11 @@ import './Styles/NavBar.css'
 import {AiOutlineClose} from 'react-icons/ai'
 import {FaBars} from 'react-icons/fa'
 import Products from './Products'
+import Data from './Data'
+import SearchBar from './SearchBar'
+import SearchResults from './searchResults'
+
+
 function NavBar(props) {
     const [isNavOpen, setIsNavOpen] = useState(false)
     const [isNavClosed, setIsNavClosed]= useState(false)
@@ -13,10 +18,17 @@ function NavBar(props) {
     const handleCloseNav=()=>{
       setIsNavClosed(prevState => !prevState);
   }
+  const [results, setResults]= useState([])
   return (
     <div>
     <header>
     <h1 className='logo'>out<span>fits</span></h1>
+    <div style={{display:"block", width:"100%"}}>
+     <SearchBar setResults={setResults} style={{width:"50%"}}/>
+  <SearchResults results={results}/>
+  </div>
+ 
+   
     <div className='bars'>
     
     <FaBars onClick={handleToggleNav} className={isNavOpen? 'nav-open': 'nav-closed'}/>

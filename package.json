@@ -1,5 +1,5 @@
 {
-  "homepage":"http://SIMON-KANGI.github.io/Clothline",
+  "homepage": "http://SIMON-KANGI.github.io/Clothline",
   "name": "outfits",
   "private": true,
   "version": "0.0.0",
@@ -7,14 +7,18 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",

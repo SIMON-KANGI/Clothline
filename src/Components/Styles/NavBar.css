@@ -83,3 +83,6 @@ cursor: pointer;
      cursor: pointer;
 }
 }
+input:focus{
+    outline:none;
+}

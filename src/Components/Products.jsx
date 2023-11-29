@@ -7,6 +7,7 @@ import './Styles/Products.css'
 
 function Products(props){
 const  {addItem}= useCart()
+console.log(typeof addItem)
   return (
     <div id="items">
     <div  className='card-row'>

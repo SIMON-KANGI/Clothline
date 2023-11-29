@@ -1,0 +1,8 @@
+.results{
+    width:100%;
+    background-color: hsl(208, 100%, 97%);
+    flex-direction: column;
+    display:flex;
+    overflow-y: scroll;
+    border-radius:10px;
+}
